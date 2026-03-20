@@ -7,91 +7,8 @@
   <title>Museo Vestigio - Audioguía</title>
   <script src="../assets/js/color-modes.js"></script>
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/index.css" rel="stylesheet" />
   <meta name="theme-color" content="#712cf9" />
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .b-example-divider {
-      width: 100%;
-      height: 3rem;
-      background-color: #0000001a;
-      border: solid rgba(0, 0, 0, 0.15);
-      border-width: 1px 0;
-      box-shadow:
-        inset 0 0.5em 1.5em #0000001a,
-        inset 0 0.125em 0.5em #00000026;
-    }
-
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
-
-    .bi {
-      vertical-align: -0.125em;
-      fill: currentColor;
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .btn-bd-primary {
-      --bd-violet-bg: #712cf9;
-      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-      --bs-btn-font-weight: 600;
-      --bs-btn-color: var(--bs-white);
-      --bs-btn-bg: var(--bd-violet-bg);
-      --bs-btn-border-color: var(--bd-violet-bg);
-      --bs-btn-hover-color: var(--bs-white);
-      --bs-btn-hover-bg: #6528e0;
-      --bs-btn-hover-border-color: #6528e0;
-      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-      --bs-btn-active-color: var(--bs-btn-hover-color);
-      --bs-btn-active-bg: #5a23c8;
-      --bs-btn-active-border-color: #5a23c8;
-    }
-
-    .bd-mode-toggle {
-      z-index: 1500;
-    }
-
-    .bd-mode-toggle .bi {
-      width: 1em;
-      height: 1em;
-    }
-
-    .bd-mode-toggle .dropdown-menu .active .bi {
-      display: block !important;
-    }
-  </style>
 </head>
 
 <body>
@@ -146,7 +63,8 @@
           </p>
 
           <p id="play-audio" class="col-md-8 fs-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+            <img src="/img/icons/speaker.svg" alt="Speaker icon">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
               class="bi bi-volume-up-fill" viewBox="0 0 16 16">
               <path
                 d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z" />
@@ -154,7 +72,7 @@
                 d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z" />
               <path
                 d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06" />
-            </svg>
+            </svg> -->
           </p>
           <audio id="audio" controls></audio>
           <p id="content" class="p-1">
@@ -176,48 +94,8 @@
       </footer>
     </div>
   </main>
-  <script>
-    // 1️⃣ Get query parameters
-    const params = new URLSearchParams(window.location.search);
-    const id = parseInt(params.get('id'));           // convert to number
-    const language = params.get('language') || 'spanish'; // default to english
-
-    // 2️⃣ Fetch JSON file
-    fetch('inventory.json')
-      .then(response => response.json())
-      .then(data => {
-        const item = data.find(obj => obj.id == id);
-        if (item) {
-          const content = item[language.toLowerCase()] || 'Language not found';
-          document.getElementById('content').textContent = content;
-          const title = 'title_' + language.toLowerCase();
-          document.getElementById('title').textContent = item[title];
-          const audio = 'audio_' + language.toLowerCase();
-
-          //set the audio
-          const audioPath = item[audio];
-          const audioElement = document.getElementById('audio');
-
-          if (audioPath) {
-            audioElement.src = audioPath;
-            audioElement.load();  // load the new audio file
-            const img = document.getElementById('image');
-            img.src = item['image']
-          } else {
-            audioElement.style.display = 'none'; // hide audio if no file
-          }
-
-        } else {
-          document.getElementById('content').textContent = 'Item not found';
-        }
-        document.getElementById('author').textContent = item['author'];
-      })
-      .catch(err => {
-        console.error(err);
-        document.getElementById('content').textContent = 'Error loading data';
-      });
-  </script>
-  <script src="../assets/dist/js/bootstrap.bundle.min.js" class="astro-vvvwv3sm"></script>
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/index.js" class="astro-vvvwv3sm"></script>
 </body>
 
 </html>
