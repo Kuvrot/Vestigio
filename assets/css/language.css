@@ -80,3 +80,13 @@
 .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
 }
+
+main{
+    height: 100%;
+}
+
+.lang-div{
+    height: 100;
+    display: flex;
+    flex-direction: column;
+}
