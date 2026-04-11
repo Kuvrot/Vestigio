@@ -10,5 +10,29 @@
         "english": "You are standing before one of the most iconic images of political power transformed into art: Napoleon Crossing the Alps, painted by Jacques-Louis David in the early 19th century. Notice how Napoleon Bonaparte is shown mounted on a rearing horse, pointing forward. His gesture leaves no doubt: he leads, commands, and dominates. However, this scene is not entirely real. In reality, Napoleon crossed the Alps on a mule under far more modest conditions. David was not trying to document events, but to create a myth. Look closely at the names carved into the rocks: Hannibal, Charlemagne… and now Napoleon. In doing so, the painter places him among the great leaders who shaped history. The style belongs to Neoclassicism, which draws on the aesthetics of classical antiquity to convey values such as heroism, discipline, and moral greatness. The lines are clear, the figure is idealized, and everything in the composition directs your attention toward the protagonist. This painting is not just a work of art—it is propaganda. It was commissioned to reinforce Napoleon’s image as a near-legendary leader, capable of mastering both nature and destiny. As you look at it, ask yourself: are you seeing a man… or a symbol?",
         "audio_english" : "../audio/en/1.wav",
         "image" : "../img/1.jpg"
+    },
+    {
+        "id": "2",
+        "title_spanish": "La vocación de San Mateo c. 1600",
+        "title_english":"The Calling of Saint Matthew c. 1600",
+        "author": "Caravaggio",
+        "technique": "Óleo sobre lienzo",
+        "spanish": "Bienvenido a La vocación de San Mateo, una obra maestra de Caravaggio.  Observe cómo la escena parece desarrollarse en una taberna común. Caravaggio rompe con la tradición idealizada y presenta a los personajes como gente real, cercana al espectador.  Dirija su mirada hacia la derecha: ahí se encuentra Jesús, apenas visible, señalando a Mateo. Ese gesto recuerda a la mano de Dios en la Capilla Sixtina, estableciendo una conexión entre lo divino y lo humano.  Note el uso de la luz. Ese rayo que cruza la oscuridad no solo ilumina la escena, sino que simboliza el llamado espiritual. Mateo, sorprendido, parece preguntarse: “¿Yo?”  Caravaggio nos invita a reflexionar: la vocación puede llegar en cualquier momento, incluso en los lugares más inesperados.",
+        "audio_spanish" : "../audio/es/2.mp3",
+        "english": "Welcome to The Calling of Saint Matthew, a masterpiece by Caravaggio.  Notice how the scene unfolds in what appears to be an ordinary tavern. Caravaggio breaks with idealized tradition, portraying figures as real, everyday people.  Look to the right: there is Jesus, barely visible, pointing toward Matthew. This gesture recalls the hand of God in the Sistine Chapel, linking the divine with the human.  Pay attention to the use of light. The beam cutting through the darkness not only illuminates the scene but symbolizes a spiritual calling. Matthew, surprised, seems to ask, “Me?”  Caravaggio invites us to reflect: a calling can come at any moment, even in the most unexpected places.",
+        "audio_english" : "../audio/en/2.mp3",
+        "image" : "../img/2.jpg"
+    },
+    {
+        "id": "3",
+        "title_spanish": "Judith decapitando a Holofernes c. 1599",
+        "title_english":"Judith Beheading Holofernes c. 1599",
+        "author": "Caravaggio (Michelangelo Merisi)",
+        "technique": "Óleo sobre lienzo",
+        "spanish": "Se encuentra ante Judith decapitando a Holofernes, una de las obras más intensas de Caravaggio.  Observe la escena: no hay preparación ni desenlace, solo el instante más crudo de la acción. Caravaggio elige capturar el momento exacto en que la espada atraviesa el cuello de Holofernes.  Fíjese en el rostro de Judith. No es una heroína idealizada; parece dudar, incluso sentir rechazo ante lo que está haciendo. Esta ambigüedad emocional la hace profundamente humana.  La anciana detrás de ella observa con atención, sosteniendo un saco donde pronto se depositará la cabeza. Su presencia refuerza la tensión narrativa.  La luz, una vez más, juega un papel fundamental. Ilumina los rostros y la acción, dejando el resto en sombras profundas.  Caravaggio no solo muestra un acto de violencia: nos confronta con la complejidad moral del heroísmo.",
+        "audio_spanish" : "../audio/es/3.mp3",
+        "english": "You are standing before Judith Beheading Holofernes, one of Caravaggio’s most intense works.  Observe the scene: there is no buildup or aftermath, only the raw moment of action. Caravaggio captures the exact instant when the sword cuts through Holofernes’ neck.  Look closely at Judith’s face. She is not an idealized heroine; she appears hesitant, even repulsed by her own act. This emotional ambiguity makes her deeply human.  The elderly woman behind her watches closely, holding a sack that will soon carry the severed head. Her presence heightens the narrative tension.  Light once again plays a crucial role. It illuminates the faces and the action, leaving everything else in deep shadow.  Caravaggio is not simply depicting violence—he is confronting us with the moral complexity of heroism.",
+        "audio_english" : "../audio/en/3.mp3",
+        "image" : "../img/3.jpg"
     }
 ]

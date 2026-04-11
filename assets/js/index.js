@@ -21,17 +21,17 @@ fetch('inventory.json')
         
         if (audioPath) {
           audioElement.src = audioPath;
-          audioElement.load();  // load the new audio file
+          audioElement.load();
           const img = document.getElementById('image');
           img.src = item['image']
         } else {
-          audioElement.style.display = 'none'; // hide audio if no file
+          audioElement.style.display = 'none';
         }
 
     } else {
       document.getElementById('content').textContent = 'Item not found';
     }
-    document.getElementById('author').textContent = item['author'];
+      document.getElementById('author').textContent = item['author'];
   })
   .catch(err => {
     console.error(err);
