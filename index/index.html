@@ -7,7 +7,7 @@
   <title>Museo Vestigio - Audioguía</title>
   <script src="../assets/js/color-modes.js"></script>
   <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/css/index.css" rel="stylesheet" />
+  <link href="../assets/css/style.css" rel="stylesheet" />
   <meta name="theme-color" content="#712cf9" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -49,8 +49,19 @@
       </footer>
     </div>
   </main>
+  <section id="accesibilidad">
+    <div class="acces-menu">
+      <div id="visual" class="acces-btn" onclick="accesBtnVisualActionState()">
+        <i class="fa-solid fa-eye-low-vision" style="color: rgb(255, 255, 255);"></i>
+      </div>
+    </div>
+    <button class="acces-btn" onclick="accesBtnActionState()">
+      <i class="fa-solid fa-wheelchair" style="color: rgb(255, 255, 255);"></i>
+    </button>
+  </section>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/index.js"></script>
+  <script src="../assets/js/accesibilidad.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,40 @@
+#accesibilidad {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  /* background-color: red; */
+  padding: 20px;
+  margin-top: 20px;
+  transition-duration: 0.3s;
+}
+
+.acces-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--btn-bg);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 1rem 0rem;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.acces-btn:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.acces-btn:active {
+  background-color: var(--bs-btn-active-bg);
+}
+
+.acces-menu {
+  /* background-color: chartreuse; */
+  overflow: hidden;
+  transition: 0.3s;
+
+}
