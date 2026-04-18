@@ -52,12 +52,15 @@
   <section id="accesibilidad">
     <div class="acces-menu">
       <div id="visual" class="acces-btn" onclick="accesBtnVisualActionState()">
-        <i class="fa-solid fa-eye-low-vision" style="color: rgb(255, 255, 255);"></i>
+        <i class="fa-solid fa-eye-low-vision" style="color: rgb(255, 255, 255);"></i> <span>Texto grande</span>
+      </div>
+      <div id="dislexia" class="acces-btn" onclick="accesBtnDislexiaActionState()">
+        <i class="fa-solid fa-font" style="color: rgb(255, 255, 255);"></i> <span>Texto para dislexicos</span>
       </div>
     </div>
-    <button class="acces-btn" onclick="accesBtnActionState()">
+    <div id="acces-menu" class="acces-btn" onclick="accesBtnActionState()">
       <i class="fa-solid fa-wheelchair" style="color: rgb(255, 255, 255);"></i>
-    </button>
+    </div>
   </section>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/index.js"></script>
