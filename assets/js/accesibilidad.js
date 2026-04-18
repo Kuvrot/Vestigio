@@ -81,4 +81,11 @@ function accesBtnDislexiaActionState()
     }
 }
 
-accesBtnActionState();
+function inicio() {
+    accesBtnActionState();
+    setTimeout(() => {
+        document.getElementById("acces-menu").style.display = "";
+    }, 1100);
+}
+
+inicio();
