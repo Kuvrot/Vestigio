@@ -129,3 +129,15 @@ footer{
     font-size: var(--fs-normal);
     white-space: pre-wrap;
 }
+
+body {
+  background-image: linear-gradient(to right, #6300e9, #74130f, rgb(110, 110, 110), #01c755);
+}
+
+#header{
+    color:white;
+    font-family:Impact, Helvetica, Arial, 'Times New Roman', Times, serif;
+    text-decoration: bold;
+    font-size: 2rem;
+    text-align: center;
+}
